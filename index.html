@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Document</title>
+    <style>
+        .winner{
+            color: green;
+        }
+        .loser{
+            color: red;
+        }
+        .name{
+            color:#1d4ed8;
+        }
+    </style>
+</head>
+
+<p> Created by <span class="name"> REHAN HUSSAIN</span></p>
+
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="img is-2by3">
+                            <img src="badminton.pic" alt="">
+
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        BADMINTON SCORE KEEPER
+                      </p>
+                     
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                       <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                      </div>
+                    </div>
+                    <p class="subtitle">click the buttons below to increase the score!!
+                    </p>
+                     <label for="selectWinning" class="label is-large is-inline"> Playing to </label>
+                    <div class="select is-rounded">
+                    <select name="" id="selectWinning">
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="21">21</option>
+           
+                  </select>
+                  </div>
+
+                    
+                    <footer class="card-footer">
+                        <button id="p1Button" class="button is-primary card-footer-item">+1 player one</button>
+                        <button id="p2Button" class="button is-info card-footer-item">+1 player two</button>
+                        <button id="rButton" class="button is-danger card-footer-item">RESET</button>
+                    
+                    
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="index.js"></script>
+</body>
+</html>
